@@ -1,0 +1,2 @@
+module Site::ContactHelper
+end

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AlexvirtualbrApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%# stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <%# javascript_importmap_tags %>
+  </head>
+  <body class="bg-gray-100 sm:bg-yellow-300 2xl:bg-red-300 ">
+    <%= render partial: 'layouts/navbar_tailwind_site' %>
+    <p style="color: green"><%= notice %></p>
+    <div class="px-8 py-12 max-w-md mx-auto">
+      <%= yield %>
+    </div>
+  </body>
+</html>
